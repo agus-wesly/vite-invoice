@@ -11,13 +11,32 @@
   font-family: "Golos Text", sans-serif;
 }
 
+::-webkit-scrollbar {
+  display: none;
+}
+
+body {
+  background: #141625;
+}
+
 button {
   outline: none;
   border: none;
   cursor: pointer;
 }
 
-textarea {
+label {
+  padding-bottom: 4px;
+}
+
+a {
+  display: block;
+}
+
+textarea,
+select,
+input {
   outline: none;
   border: none;
+  min-width: 0;
 }

@@ -1,4 +1,5 @@
-import Home from "../views/Home.vue";
+import Home from "../views/Home/Home.vue";
+import Invoice from "@/views/Invoice/Invoice.vue";
 import { createRouter, createWebHistory } from "vue-router";
 
 const routes = createRouter({
@@ -7,6 +8,11 @@ const routes = createRouter({
     {
       path: "/",
       component: Home,
+    },
+    {
+      path: "/invoice/:id",
+      component: Invoice,
+      name: "Invoice",
     },
   ],
 });
